@@ -42,15 +42,25 @@
   background-size: 100%;
   object-fit: cover;
 }
-h5 {
+.feature-header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   padding: 10px 0px;
   font-size: 1.5em;
 }
-p {
+.feature-main {
   font-size: 1.2em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
-img {
+.icon {
   width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
 }
 .feature-content {
   display: flex;
@@ -58,6 +68,9 @@ img {
   padding: 10px;
   text-align: center;
   align-items: center;
+}
+.head-wrap {
+  max-width: 50%;
 }
 @media screen and (max-width: 768px) {
   .logo {
@@ -74,7 +87,7 @@ img {
   .header {
     padding: 5px;
   }
-  .banner{
+  .banner {
     margin-top: 62px;
   }
 }
